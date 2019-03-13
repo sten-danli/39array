@@ -7,8 +7,15 @@ int main() {
 	int findData = 2;
 	int ret = -1;
 	int zahl;
-	printf("Gib ein Zahl zwischen >0 & <10 ein: ");
-	scanf("%d", &zahl);
+	while (1)
+	{
+		printf("Gib ein Zahl zwischen >0 & <10 ein: ");
+		scanf("%d", &zahl);
+		if (zahl >= 0 && zahl <= 10)
+			break;
+
+	}
+	
 	for (int i = 0; i < 10; i++)
 	{
 		if (arr[i] == zahl)
